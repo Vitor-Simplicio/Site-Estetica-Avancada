@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroVideo from "@/assets/hero-video.mp4"; // Substitua pelo caminho do seu vídeo
+import backgroundVideo from "@/assets/background-sala-edit.mp4";
 import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
           className="w-full h-full object-cover scale-105"
-          src="src/assets/background-sala-edit.mp4"
+          src={backgroundVideo}
           autoPlay
           loop
           muted
