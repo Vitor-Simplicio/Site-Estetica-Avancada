@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Phone, Instagram, MapPin, Clock, ArrowRight } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -56,31 +56,45 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-sm uppercase tracking-widest text-primary font-semibold mb-1">Horário</h3>
-                  <p className="text-foreground font-medium">
-                    Seg a Sex: 9h às 19h<br />
-                    Sáb: 9h às 14h
+                  <p className="text-foreground font-medium leading-relaxed">
+                    Atendimento exclusivo <br />
+                    com agendamento prévio
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-5 group">
-                <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground border border-primary/10">
-                  <Mail className="w-6 h-6" />
-                </div>
+                <a 
+                  href="https://share.google/TMzdjcCdVHrANV5V3" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-shrink-0 w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground border border-primary/10"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
                 <div>
-                  <h3 className="text-sm uppercase tracking-widest text-primary font-semibold mb-1">Email</h3>
-                  <p className="text-foreground font-medium">contato@soniaestetica.com.br</p>
+                  <h3 className="text-sm uppercase tracking-widest text-primary font-semibold mb-1">Instagram</h3>
+                  <a 
+                    href="https://share.google/TMzdjcCdVHrANV5V3" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-foreground font-medium hover:text-primary transition-colors"
+                  >
+                    @soniasaudeeestetica
+                  </a>
                 </div>
               </div>
             </div>
 
-            <Button 
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant rounded-full px-12 h-16 text-lg transition-all duration-500 hover:scale-105 group"
-            >
-              Agendar via WhatsApp
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform" />
-            </Button>
+            <a href="https://wa.me/5511956485972" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant rounded-full px-12 h-16 text-lg transition-all duration-500 hover:scale-105 group"
+              >
+                Agendar via WhatsApp
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform" />
+              </Button>
+            </a>
           </div>
 
           {/* Coluna da direita - Mapa com moldura elegante */}

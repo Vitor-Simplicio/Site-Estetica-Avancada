@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube } from "lucide-react";
+import { Instagram, Youtube } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -23,12 +23,6 @@ export const Footer = () => {
                 className="w-14 h-14 rounded-full bg-[#2c3e50]/5 flex items-center justify-center hover:bg-[#2c3e50] hover:text-[#fdf6e3] transition-all duration-500 group border border-[#2c3e50]/10"
               >
                 <Instagram className="w-6 h-6 transition-transform duration-300 group-hover:scale-110" />
-              </a>
-              <a 
-                href="#" 
-                className="w-14 h-14 rounded-full bg-[#2c3e50]/5 flex items-center justify-center hover:bg-[#2c3e50] hover:text-[#fdf6e3] transition-all duration-500 group border border-[#2c3e50]/10"
-              >
-                <Facebook className="w-6 h-6 transition-transform duration-300 group-hover:scale-110" />
               </a>
             </div>
           </div>

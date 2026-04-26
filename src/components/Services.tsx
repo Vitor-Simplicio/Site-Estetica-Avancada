@@ -17,11 +17,6 @@ const services = [
     image: servicesSkincare,
   },
   {
-    title: "Tratamentos Corporais",
-    description: "Procedimentos avançados para modelagem e bem-estar corporal.",
-    image: servicesBody,
-  },
-  {
     title: "Consultoria Personalizada",
     description: "Avaliação completa e plano de tratamento individualizado.",
     image: servicesConsultation,
@@ -47,7 +42,7 @@ export const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={service.title}
@@ -74,7 +69,9 @@ export const Services = () => {
                       {service.description}
                     </p>
                     <a 
-                      href="#contato" 
+                      href="https://wa.me/5511956485972" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
                       className="inline-flex items-center text-primary font-medium text-sm uppercase tracking-widest group/link"
                     >
                       Solicitar Consulta 

@@ -6,7 +6,6 @@ const navLinks = [
   { name: "Home", href: "#home" },
   { name: "Procedimentos", href: "#servicos" },
   { name: "Benefícios", href: "#beneficios" },
-  { name: "Sobre", href: "#sobre" },
   { name: "Contato", href: "#contato" },
 ];
 
@@ -53,13 +52,15 @@ export const Header = () => {
 
           {/* CTA Button Desktop */}
           <div className="hidden lg:block">
-            <Button
-              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-elegant transform transition-all duration-300 hover:scale-105 group rounded-full px-8"
-              size="lg"
-            >
-              AGENDE SUA CONSULTA
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </Button>
+            <a href="https://wa.me/5511956485972" target="_blank" rel="noopener noreferrer">
+              <Button
+                className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-elegant transform transition-all duration-300 hover:scale-105 group rounded-full px-8"
+                size="lg"
+              >
+                AGENDE SUA CONSULTA
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,14 +90,16 @@ export const Header = () => {
                 {link.name}
               </a>
             ))}
-            <Button
-              className="bg-primary text-primary-foreground w-full group shadow-soft hover:shadow-elegant rounded-full h-14 text-lg"
-              size="lg"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              AGENDE SUA CONSULTA
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </Button>
+            <a href="https://wa.me/5511956485972" target="_blank" rel="noopener noreferrer">
+              <Button
+                className="bg-primary text-primary-foreground w-full group shadow-soft hover:shadow-elegant rounded-full h-14 text-lg"
+                size="lg"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                AGENDE SUA CONSULTA
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+              </Button>
+            </a>
           </div>
         </div>
       </nav>
